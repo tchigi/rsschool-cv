@@ -17,7 +17,8 @@ JAVASCRIPT - ★★★
 
 As an example code, I'm using a solution to a task on Codewars 'Does my number look big in this?' 6 kyu JavaScript:
 
-```function narcissistic(value) {
+```JavaScript
+function narcissistic(value) {
 let arr = value.toString().split('')
 let pow = arr.length
 let mult = 0
