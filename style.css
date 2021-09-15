@@ -214,10 +214,10 @@ p {
   color: #4a525a;
 }
 pre {
-  background-color: black;
-  color: white;
+  background-color: #fff;
   margin: 0 40% 20px 10%;
   padding-top: 20px;
+  padding-bottom: 20px;
   border: 2px #9883e5 solid;
 }
 .education {
@@ -281,6 +281,9 @@ pre {
   }
   strong {
     margin-right: 5px;
+  }
+  pre {
+    margin: 0 1% 20px 1%;
   }
 }
 @media (max-width: 767px) {
@@ -400,6 +403,9 @@ pre {
   h2 {
     font-size: 40px;
   }
+  pre {
+    margin: 0 1% 20px 1%;
+  }
 }
 @media (max-width: 505px) {
   .hi {
@@ -418,7 +424,7 @@ pre {
     margin-bottom: 10px;
   }
   pre {
-    font-size: 10px;
+    font-size: 9px;
     margin: 0 3% 20px 3%;
   }
   .logo,
