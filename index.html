@@ -32,7 +32,7 @@
           </div>
         </header>
         <main class="main">
-          <section class="home">
+          <div class="home">
             <img class="avatar" src="img/avatar.jpg" alt="Ilya Chigrinov" />
             <section class="home__content">
               <h1 class="hi">Hello, I'm Tchigi</h1>
@@ -46,9 +46,9 @@
                 </ul>
               </div>
             </section>
-          </section>
+          </div>
           <section class="about_me">
-            <h2><a name="about"></a><em>#ABOUT ME</em></h2>
+            <h2><a id="about"></a><em>#ABOUT ME</em></h2>
             <p>
               All my adult life I spend at the computer. Therefore, working in
               the IT field has become my main goal. This is why I entered in RSS
@@ -59,7 +59,7 @@
             </p>
           </section>
           <section class="skills">
-            <a name="skl"></a>
+            <a id="skl"></a>
             <h2><em>#SKILLS</em></h2>
             <ul>
               <li>HTML5 - ★★</li>
@@ -68,7 +68,7 @@
             </ul>
           </section>
           <section>
-            <h2><a name="code"></a><em>#EXAMPLE CODE</em></h2>
+            <h2><a id="code"></a><em>#EXAMPLE CODE</em></h2>
             <p>
               As an example code, I'm using a solution to a task on Codewars
               'Does my number look big in this?' 6 kyu JavaScript:
@@ -79,7 +79,7 @@
         let pow = arr.length
         let mult = 0
         let sum = 0
-        for (let i = 0; i < arr.length; i++){
+        for (let i = 0; i &lt; arr.length; i++){
           mult = arr[i] ** pow
           sum += mult
         }
@@ -88,9 +88,9 @@
           </pre
             >
           </section>
-          <h2><a name="exp"></a><em>#WORK EXPERIENCE</em></h2>
+          <h2><a id="exp"></a><em>#WORK EXPERIENCE</em></h2>
           <p>Studying RSS courses on JavaScript / Front-end developer</p>
-          <h2><a name="education"></a><em>#EDUCATION</em></h2>
+          <h2><a id="education"></a><em>#EDUCATION</em></h2>
           <ul class="education">
             <li><strong> Period of study:</strong> 2016-2020</li>
             <li>
@@ -104,7 +104,7 @@
             </li>
           </ul>
           <section class="languages">
-            <a name="lang"></a>
+            <a id="lang"></a>
             <h2>#LANGUAGES</h2>
             <ul>
               <li>Russian 🇷🇺: Native</li>
