@@ -205,14 +205,79 @@ p {
   margin-right: 7%;
   margin-bottom: 30px;
 }
-.skills ul {
-  font-size: 24px;
-  font-weight: 400;
-  text-align: justify;
-  text-indent: 50px;
-  margin-left: 7%;
-  color: #4a525a;
+.skills-container {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  width: 100%;
+  height: auto;
 }
+.skills__subcontainer {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  width: 30%;
+  height: auto;
+  border: #9883e5 3px solid;
+  border-radius: 20px;
+  padding: 10px;
+  justify-content: center;
+}
+.skills__item__title {
+  color: #24272b;
+  font-weight: bold;
+  font-size: 18px;
+}
+.skills__item__container {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  gap: 20px;
+}
+.skills__item {
+  height: 100px;
+  width: 80px;
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-color: white;
+}
+.html-logo {
+  background-image: url("./img/logo/html-logo.svg");
+}
+.css-logo {
+  background-image: url("./img/logo/css-logo.svg");
+}
+.js-logo {
+  background-image: url("./img/logo/js-logo.svg");
+}
+.ts-logo {
+  background-image: url("./img/logo/ts-logo.svg");
+}
+
+.react-logo {
+  background-image: url("./img/logo/react-logo.svg");
+}
+.redux-logo {
+  background-image: url("./img/logo/redux-logo.svg");
+}
+.sass-logo {
+  background-image: url("./img/logo/sass-logo.svg");
+}
+.git-logo {
+  background-image: url("./img/logo/git-logo.svg");
+}
+.figma-logo {
+  background-image: url("./img/logo/figma-logo.svg");
+}
+.vscode-logo {
+  background-image: url("./img/logo/vscode-logo.svg");
+}
+.webstorm-logo {
+  background-image: url("./img/logo/webstorm-logo.svg");
+}
+
 pre {
   background-color: black;
   color: white;
