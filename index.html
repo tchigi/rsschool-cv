@@ -21,59 +21,40 @@
             <nav class="header__menu">
               <ul class="header__list">
                 <li><a class="active" href="#">HOME</a></li>
-                <li><a href="#about">ABOUT ME</a></li>
                 <li><a href="#skl">SKILLS</a></li>
-                <li><a href="#code">CODE EXAMPLE</a></li>
-                <li><a href="#exp">WORK EXPERIENCE</a></li>
+                <li><a href="#about">ABOUT ME</a></li>
+                <li><a href="#portfolio">PORTFOLIO</a></li>
                 <li><a href="#education">EDUCATION</a></li>
-                <li><a href="#lang">LANGUAGES</a></li>
               </ul>
             </nav>
           </div>
         </header>
+
         <main class="main">
           <section class="home">
-            <img class="avatar" src="img/avatar.jpg" alt="Ilya Chigrinov" />
-            <section class="home__content">
-              <h1 class="hi">Hello, I'm Tchigi</h1>
-              <div class="info">
-                <ul>
-                  <li><strong> FirstName:</strong> Ilya</li>
-                  <li><strong> LastName:</strong> Chigrinov</li>
-                  <li><strong> Age:</strong> 24</li>
-                  <li><strong> Discord:</strong> Tchigi@7163</li>
-                  <li><strong> Email:</strong> chig-ilya2010@yandex.ru</li>
-                </ul>
+            <div class="avatar"></div>
+
+            <div class="home__content">
+              <h1 class="home-title">I'm Ilya Chigrinov
+                <hr><b>Front-end Developer</b>
+              </h1>
+
+              <div class="home-greetings main__text">Hello! My name is Ilya.
+                <hr> I love coding and learning everything about code.
               </div>
-            </section>
+            </div>
           </section>
-          <section class="about_me">
-            <h2><a name="about"></a><em>#ABOUT ME</em></h2>
-            <p>
-              All my adult life I spend at the computer. Therefore, working in
-              the IT field has become my main goal. This is why I entered in RSS
-              courses. The profession of a Front-end developer looks very
-              interesting and exciting. I am purposeful, sociable and quick to
-              learn. I think these skills are enough to complete the courses and
-              become a good specialist.
-            </p>
-          </section>
-          <section class="skills">
-            <a name="skl"></a>
-            <h2><em>#SKILLS</em></h2>
+
+          <section class="skills main__section">
+            <h2 class="main__title"><a name="skl"></a>Skills</h2>
             <div class="skills-container">
               <div class="programming-languages-container skills__subcontainer">
-                <div class="skills__item__title">Programming languages and technologies:</div>
+                <div class="skills__item__title">Programming languages, technologies, frameworks and libraries:</div>
                 <div class="skills__item__container">
                   <div class="skills__item html-logo"></div>
                   <div class="skills__item css-logo"></div>
                   <div class="skills__item js-logo"></div>
                   <div class="skills__item ts-logo"></div>
-                </div>
-              </div>
-              <div class="frameworks-container skills__subcontainer">
-                <div class="skills__item__title">Frameworks and libraries:</div>
-                <div class="skills__item__container">
                   <div class="skills__item react-logo"></div>
                   <div class="skills__item redux-logo"></div>
                   <div class="skills__item sass-logo"></div>
@@ -88,59 +69,144 @@
                   <div class="skills__item webstorm-logo"></div>
                 </div>
               </div>
+              <div class="frameworks-container skills__subcontainer">
+                <div class="skills__item__title">Languages:</div>
+                <div class="skills__item__container">
+                  <ul class="languages-list">
+                    <li class="languages__list__item main__text"><div class="flag__item rus-flag"></div>: Native</li>
+                    <li class="languages__list__item main__text"><div class="flag__item eng-flag"></div>: B2+</li>
+                    <li class="languages__list__item main__text"> <div class="flag__item fr-flag"></div> : A2+</li>
+                  </ul>
+                </div>
+              </div>
             </div>
           </section>
-          <section>
-            <h2><a name="code"></a><em>#EXAMPLE CODE</em></h2>
-            <p>
-              As an example code, I'm using a solution to a task on Codewars
-              'Does my number look big in this?' 6 kyu JavaScript:
-            </p>
-            <pre>
-      function narcissistic(value) {
-        let arr = value.toString().split('')
-        let pow = arr.length
-        let mult = 0
-        let sum = 0
-        for (let i = 0; i < arr.length; i++){
-          mult = arr[i] ** pow
-          sum += mult
-        }
-        return sum === value ? true : false
-      }
-          </pre
-            >
+
+          <section class="about_me main__section">
+            <h2 class="main__title"><a name="about"></a>About me</h2>
+            <div class="info-container">
+              <div class="contacts-container">
+                <div class="contacts-title">Contacts</div>
+                <ul class="contacts-list">
+                  <li class="contacts__item main__text"> Age: <em>24</em></li>
+                  <li class="contacts__item main__text"> Discord:  <em>Tchigi@7163</em></li>
+                  <li class="contacts__item main__text"> Email: <em>chig-ilya2010@yandex.ru </em></li>
+                  <li class="contacts__item main__text"> Telegram:
+                    <a class="tg-link" href="https://t.me/tchigi " target="_blank"><em>@Tchigi</em></a>
+                  </li>
+                </ul>
+              </div>
+              <div class="info-text-container main__text">
+                <div class="about-me-container">
+                  <div class="about-me-title">Ilya Chigrinov</div>
+                  <div class="about-me-subtitle">Front-End Developer</div>
+                  <div class="about-me-links">
+                    <a href="https://github.com/tchigi" target="_blank">
+                      <div class="about-me-github"></div>
+                    </a>
+                    <a href="https://www.codewars.com/users/tchigi" target="_blank">
+                      <div class="about-me-codewars"></div>
+                    </a>
+                  </div>
+                </div>
+                <div class="info-text-item">All my adult life I spend at the computer.
+                   Therefore, working <hr> in the IT field has become my main goal.
+                   The profession of a Front-end developer <hr> looks very interesting and exciting.
+                   I am purposeful, sociable and quick to learn.
+                  <hr> I think these skills are enough to become a good specialist.
+                </div>
+              </div>
+            </div>
           </section>
-          <h2><a name="exp"></a><em>#WORK EXPERIENCE</em></h2>
-          <p>Studying RSS courses on JavaScript / Front-end developer</p>
-          <h2><a name="education"></a><em>#EDUCATION</em></h2>
-          <ul class="education">
-            <li><strong> Period of study:</strong> 2016-2020</li>
-            <li>
-              <strong> Institute:</strong>
-              <a class="miit" href="https://www.miit.ru/en" target="blanc"
-                >RUSSIAN UNIVERSITY OF TRANSPORT (MIIT)</a
-              >
-            </li>
-            <li>
-              <strong> Speciality:</strong> Technology of transport processes
-            </li>
-          </ul>
-          <section class="languages">
-            <a name="lang"></a>
-            <h2>#LANGUAGES</h2>
-            <ul>
-              <li>Russian 🇷🇺: Native</li>
-              <li>English 🇬🇧: B2+</li>
-              <li>French 🇫🇷: A2+</li>
-            </ul>
+
+          <section class="portfolio main__section">
+            <h2 class="main__title"><a name="portfolio"></a>Portfolio</h2>
+
+            <div class="portfolio-container">
+              <div class="portfolio__item">
+                <a href="https://tchigi-museum.netlify.app/" target="_blank">
+                  <div class="portfolio__item__img museum-img"></div>
+                </a>
+                <div class="portfolio__item__text main__text">
+                  Museum is the site of the Louvre. Includes:
+                  <ul class="museum-list">
+                    <li>- fixed and adaptive layout</li>
+                    <li>- creating an infinite slider / swiper or adding it using the library</li>
+                    <li>- creating a custom HTML5 video player</li>
+                    <li>- creating an image comparison slider</li>
+                    <li>- adding a product sales calculator to the site</li>
+                    <li>- adding an interactive map to the site</li>
+                  </ul>
+                  <div class="technologies__text">Technologies: HTML, CSS, JavaScript</div>
+                </div>
+              </div>
+              <div class="portfolio__item">
+                <a href="https://tchigi-momentum.netlify.app/" target="_blank">
+                  <div class="portfolio__item__img momentum-img"></div>
+                </a>
+                <div class="portfolio__item__text main__text">
+                  Momentum is an analogue of the Chrome Web Store application
+                  <hr>of the same name. The application shows the time and username.
+                  <hr>The background image and greeting changes depending on the
+                  <hr>time of day. The application has a clock, an image slider,
+                  <hr>weather widgets, an audio player, a quote of the day block,
+                  <hr>settings (language selection, image source, hiding elements).
+                  <hr>Local storage is used to store the username and location.
+                  <div class="technologies__text">Technologies: HTML, CSS, JavaScript</div>
+                </div>
+              </div>
+              <div class="portfolio__item">
+                <a href="https://tchigi-christmas-tree.netlify.app/" target="_blank">
+                  <div class="portfolio__item__img christmas-tree-img"></div>
+                </a>
+                <div class="portfolio__item__text main__text">
+                  Christmas tree is an application that will allow you to sort toys
+                  <hr>by name and number of copies, find a toy by name, group toys by type,
+                  <hr>add toys to favorites and remove from it, as well as an interactive page where
+                  <hr>you can decorate a Christmas tree with selected toys using drag and drop.
+                  <div class="technologies__text">Technologies: React, SASS, JavaScript</div>
+                </div>
+              </div>
+              <div class="portfolio__item">
+                <a href="https://keen-feynman-655de5.netlify.app/" target="_blank">
+                  <div class="portfolio__item__img rslang-img"></div>
+                </a>
+                <div class="portfolio__item__text main__text">
+                  RS Lang is an application for learning foreign words, including an
+                  <hr>electronic textbook with a database of words to learn, mini-games
+                  <hr>for repeating them, a statistics page for tracking individual progress.
+                  <hr> This is a project I did with a team. I performed in it for mini-games.
+                  <div class="technologies__text">Technologies: TypeScript, React, Redux</div>
+                </div>
+              </div>
+            </div>
+          </section>
+
+          <section class="education main__section">
+            <h2 class="main__title"><a name="education"></a><em>EDUCATION</em></h2>
+            <div class="education-container">
+              <div class="education__item">
+                <div class="education__item__text main__text">Period of study: <em>2016-2020</em></div>
+                <div class="education__item__text main__text">Institute:
+                  <a class="miit" href="https://www.miit.ru/en" target="_blank"><em>RUSSIAN UNIVERSITY OF TRANSPORT (MIIT)</em></a>
+                </div>
+                <div class="education__item__text main__text">Speciality: <em>Technology of transport processes</em></div>
+              </div>
+              <div class="education__item">
+                <div class="education__item__text main__text">Period of study: <em>Sep 2021- Mar 2022</em></div>
+                <div class="education__item__text main__text">Online school:
+                  <a class="miit" href="https://rs.school/js/" target="_blank"><em>The Rolling Scopes School</em></a>
+                </div>
+                <div class="education__item__text main__text">Speciality: <em>JavaScript/Front-end</em></div>
+              </div>
+            </div>
           </section>
         </main>
         <footer class="footer">
-          <a href="https://github.com/tchigi/rsschool-cv" target="blanc"
+          <a href="https://github.com/tchigi/rsschool-cv" target="_blank"
             ><img class="logo_git" src="img/github_logo.png" alt="Git logo"
           /></a>
-          <a href="https://rs.school/js/" target="blanc"
+          <a href="https://rs.school/js/" target="_blank"
             ><img
               class="logo"
               src="https://rs.school/images/rs_school_js.svg"
